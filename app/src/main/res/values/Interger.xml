@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="Phone_Number">11</integer>
+    <integer name="Password_Min_Number">6</integer>
+</resources>

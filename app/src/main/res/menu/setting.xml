@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ChangePassword"
+        android:title="修改密码"
+        android:visible="true" />
+    <item
+        android:id="@+id/logout"
+        android:title="注销"
+        android:visible="true" />
+    <item
+        android:id="@+id/WatchDeviced"
+        android:title="查看设备"
+        android:visible="true">
+    </item>
+
+</menu>

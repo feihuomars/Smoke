@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@mipmap/start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="372dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+
+        <EditText
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:textSize="20sp"
+            android:id="@+id/Account"
+            android:layout_marginTop="175dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignStart="@+id/password" />
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:text="用户名"
+            android:textSize="20sp"
+            android:ems="10"
+            android:id="@+id/Plain_username"
+            android:layout_toStartOf="@+id/password"
+            android:layout_alignBottom="@+id/Account"
+            android:layout_alignTop="@+id/Account"
+            android:layout_toLeftOf="@+id/password"
+            android:textColor="?attr/editTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textSize="20sp"
+            android:ems="10"
+            android:layout_below="@+id/Account"
+            android:id="@+id/Plain_password"
+            android:textColor="?attr/editTextColor"
+            android:layout_alignBottom="@+id/password"
+            android:layout_alignLeft="@+id/Plain_username"
+            android:layout_alignStart="@+id/Plain_username"
+            android:layout_toLeftOf="@+id/password"
+            android:layout_toStartOf="@+id/password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textSize="20sp"
+            android:id="@+id/password"
+            android:layout_below="@+id/Account"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="登录"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sign"
+            android:layout_below="@+id/Plain_password"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sign"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/signing"
+            android:visibility="invisible" />
+
+        <Button
+            android:text="更多"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/more"
+            android:layout_alignLeft="@+id/sign"
+            android:layout_alignStart="@+id/sign"
+            android:layout_alignRight="@+id/sign"
+            android:layout_alignEnd="@+id/sign" />
+
+        <CheckBox
+            android:text="记住密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_toRightOf="@+id/sign"
+            android:layout_toEndOf="@+id/sign"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:id="@+id/Remeber_Password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Care Your Home !! "
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginRight="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_above="@+id/Plain_username"
+            android:layout_alignRight="@+id/Remeber_Password"
+            android:layout_alignEnd="@+id/Remeber_Password"
+            android:layout_marginBottom="50dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="visible"
+            android:src="@mipmap/login"
+            android:id="@+id/imageView6" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

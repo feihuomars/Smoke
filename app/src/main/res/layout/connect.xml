@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/main_connect"
+    android:background="@mipmap/start"
+    android:layout_height="match_parent">
+    <include layout="@layout/lianjietitle"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/host"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/editText4"
+        android:layout_toRightOf="@+id/editText4"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_above="@+id/editText6"
+        android:text="47.94.246.26"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="服务器端口号"
+        android:textSize="20dp"
+        android:textColor="?attr/editTextColor"
+        android:layout_centerVertical="true"
+        android:id="@+id/editText6"
+        android:layout_toLeftOf="@+id/port"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none|textPersonName"
+        android:text="服务器地址"
+        android:textSize="20dp"
+        android:textColor="?attr/editTextColor"
+        android:visibility="visible"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_above="@+id/editText6"
+        android:layout_marginBottom="26dp"
+        android:layout_toLeftOf="@+id/port"
+     />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textSize="20dp"
+        android:id="@+id/port"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText4"
+        android:text="1883"/>
+
+    <Button
+        android:text="连接服务器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connect"
+        android:textColor="?attr/editTextColor"
+        android:elevation="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态"
+        android:textSize="20dp"
+        android:textColor="?attr/editTextColor"
+        android:layout_marginTop="39dp"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/editText6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/port"
+        android:layout_toStartOf="@+id/port" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:visibility="visible"
+        android:layout_height="100dp"
+        android:src="@mipmap/connect"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/host"
+        android:layout_toLeftOf="@+id/host"
+        android:layout_toStartOf="@+id/host" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:textSize="20dp"
+        android:text="未连接"
+        android:id="@+id/StateOfconnect"
+        android:layout_alignTop="@+id/editText7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

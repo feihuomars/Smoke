@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@mipmap/start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="372dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+
+        <Button
+            android:text="注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="97dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="密码"
+            android:ems="10"
+            android:id="@+id/registerPlain_password"
+            android:layout_above="@+id/register"
+            android:layout_toLeftOf="@+id/registerpassword"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/registerpassword"
+            android:singleLine="false"
+            android:layout_alignBaseline="@+id/registerPlain_password"
+            android:layout_alignBottom="@+id/registerPlain_password"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/registerAccount"
+            android:layout_alignBottom="@+id/registerPlain_username"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/registerPlain_password"
+            android:layout_toEndOf="@+id/registerPlain_password"
+            android:layout_alignTop="@+id/registerPlain_username" />
+
+        <EditText
+            android:layout_width="145dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:text="用户名"
+            android:ems="10"
+            android:id="@+id/registerPlain_username"
+            android:layout_above="@+id/registerPlain_password"
+            android:layout_marginBottom="55dp"
+            android:layout_toLeftOf="@+id/registerAccount"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:visibility="visible"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/register"
+            android:id="@+id/imageView2"
+            android:layout_above="@+id/registerAccount"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="25dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
